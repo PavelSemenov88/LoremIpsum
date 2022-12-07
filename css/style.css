@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;800&display=swap");
+.header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background: rgba(16, 16, 29, 0.9);
+}
+.header .container {
+  max-width: 1172px;
+  margin: 0 auto;
+  padding: 33.5px 0 31.5px 0;
+}
+@media (max-width: 1200px) {
+  .header .container {
+    width: 95%;
+  }
+}
+.header .container .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .header-wrapper .header-main .logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.header .container .header-wrapper .header-main .logo span {
+  color: #42A9ED;
+}
+.header .container .header-wrapper .menu {
+  width: 37.1%;
+}
+@media (max-width: 900px) {
+  .header .container .header-wrapper .menu {
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  .header .container .header-wrapper .menu {
+    width: 30px;
+  }
+}
+.header .container .header-wrapper .menu .menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 650px) {
+  .header .container .header-wrapper .menu .menu-list {
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    background-color: #000;
+    z-index: 66;
+    padding: 20px 20px 20px;
+    border-radius: 15px;
+    transition: right 0.5s;
+  }
+}
+@media (max-width: 650px) {
+  .header .container .header-wrapper .menu .menu-list .menu-list__item {
+    padding-bottom: 10px;
+  }
+}
+.header .container .header-wrapper .menu .menu-list .menu-list__item .menu-list__link {
+  color: #FFFFFF;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.header .container .header-wrapper .menu .menu-list .menu-list__item .menu-list__link:hover {
+  color: #43ABF0;
+  transition: 0.3s;
+}
+.header .container .header-wrapper .menu .menu-list_active {
+  right: 50px;
+}
+.header .container .header-wrapper .menu .menu-burder {
+  display: none;
+  position: relative;
+}
+@media (max-width: 650px) {
+  .header .container .header-wrapper .menu .menu-burder {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+.header .container .header-wrapper .menu .menu-burder span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #FFFFFF;
+  transition: 0.2s;
+  border-radius: 1px;
+}
+.header .container .header-wrapper .menu .menu-burder span:nth-child(1) {
+  top: 0;
+}
+.header .container .header-wrapper .menu .menu-burder span:nth-child(2) {
+  top: 13.5px;
+}
+.header .container .header-wrapper .menu .menu-burder span:nth-child(3) {
+  bottom: 0;
+}
+.header .container .header-wrapper .menu .menu-burder:hover > span {
+  background-color: #43ABF0;
+}
+.header .container .header-wrapper .menu .menu-burder_active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: calc(50% - 1.5px);
+  left: -5px;
+  width: 40px;
+}
+.header .container .header-wrapper .menu .menu-burder_active span:nth-child(2) {
+  opacity: 0;
+}
+.header .container .header-wrapper .menu .menu-burder_active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: calc(50% - 1.5px);
+  left: -5px;
+  width: 40px;
+}/*# sourceMappingURL=style.css.map */

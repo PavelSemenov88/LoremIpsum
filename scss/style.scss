@@ -1,11 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
 
 $fone-header: rgba(16, 16, 29, 0.9);
-$fone-burger: #000;
-$text-white: #FFFFFF;
-$text-blue: #42A9ED;
-$text-metu-blue: #43ABF0;
+$fone-black: #000;
+$text-white: #ffffff;
+$text-blue: #42a9ed;
+$text-metu-blue: #43abf0;
+$text-oders-title: #3e9cdc;
+$button-border: #6f6d7b;
+$button-text: #2a2b30;
 
-
+@mixin button-blue {
+  width: 183px;
+  height: 43px;
+  background: $text-oders-title;
+  border: 1px solid $text-white;
+  color: $text-white;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+@mixin button-white {
+  width: 183px;
+  height: 43px;
+  background: $text-white;
+  border: 1px solid $button-border;
+  color: $button-text;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
 
 @import "block/_header";
+@import "block/_oders";

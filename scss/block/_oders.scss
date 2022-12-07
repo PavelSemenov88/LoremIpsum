@@ -1,0 +1,144 @@
+.oders {
+  width: 100vw;
+  background-image: url("../../img/fone1(1920x850).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  @media (max-width: 1439px) {
+    background-image: url("../../img/fone1(1439x637).png");
+  }
+  @media (max-width: 1247px) {
+    background-image: url("../../img/fone1(1247x552).png");
+  }
+  @media (max-width: 791px) {
+    background-image: url("../../img/fone1(791x350).png");
+    background-position: top center;
+  }
+  @media (max-width: 650px) {
+    background-image: url("../../img/fone1(575x255).png");
+  }
+
+  .container {
+    max-width: 1172px;
+    margin: 0 auto;
+    @media (max-width: 1200px) {
+      width: 95%;
+    }
+    .oders-wrapper {
+      .oders-title {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+        color: $fone-black;
+        padding-top: 160px;
+        margin-bottom: 80px;
+        @media (max-width: 1400px) {
+          font-size: 38px;
+          line-height: 38px;
+          margin-bottom: 50px;
+          padding-top: 140px;
+        }
+        @media (max-width: 1250px) {
+          font-size: 28px;
+          line-height: 28px;
+          margin-bottom: 30px;
+          padding-top: 120px;
+        }
+        @media (max-width: 650px) {
+          font-size: 24px;
+          line-height: 24px;
+          margin-bottom: 15px;
+        }
+
+        span {
+          color: $text-oders-title;
+        }
+      }
+      .oders-text {
+        .oders-text__title {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          color: $fone-black;
+          margin-bottom: 10px;
+        }
+        .oders-text__points {
+          margin-bottom: 80px;
+          @media (max-width: 1650px) {
+            margin-bottom: 40px;
+          }
+          @media (max-width: 1250px) {
+            margin-bottom: 30px;
+          }
+          @media (max-width: 1000px) {
+            margin-bottom: 20px;
+          }
+          @media (max-width: 650px) {
+            margin-bottom: 10px;
+          }
+          .points {
+            margin-bottom: 5px;
+            position: relative;
+            span {
+              position: absolute;
+              top: 12px;
+              width: 5px;
+              height: 1.5px;
+              background-color: $fone-black;
+            }
+            p {
+              font-family: "Lato";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 24px;
+              color: $fone-black;
+              padding-left: 16px;
+            }
+          }
+        }
+      }
+
+      .oders-button {
+        padding-bottom: 202px;
+        @media (max-width: 1650px) {
+          padding-bottom: 122px;
+        }
+        @media (max-width: 1250px) {
+          padding-bottom: 102px;
+        }
+        @media (max-width: 1000px) {
+          padding-bottom: 52px;
+        }
+        @media (max-width: 650px) {
+          padding-bottom: 30px;
+        }
+
+        .button-wrapper {
+          @media (max-width: 420px) {
+            margin: 0 auto;
+            width: 183px;
+          }
+          .oders-button__blue {
+            @include button-blue;
+            @media (max-width: 420px) {
+              margin-bottom: 30px;
+            }
+          }
+          .oders-button__white {
+            @include button-white;
+            margin-left: 30px;
+            @media (max-width: 420px) {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

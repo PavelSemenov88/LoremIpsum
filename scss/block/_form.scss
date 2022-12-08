@@ -1,0 +1,243 @@
+.form {
+  width: 100vw;
+  background-color: $background-form;
+  background-image: url("../../img//fone2(1920x920).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  .container {
+    max-width: 1172px;
+    margin: 0 auto;
+    @media (max-width: 1200px) {
+      width: 95%;
+    }
+    .form-wrapper {
+      padding-top: 120px;
+      .form-text {
+        margin-bottom: 80px;
+        text-align: center;
+        h2 {
+          margin-bottom: 30px;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 36px;
+          line-height: 43px;
+          color: $text-white;
+          text-transform: uppercase;
+          span {
+            color: $text-oders-title;
+          }
+        }
+        p {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: $text-gray;
+        }
+      }
+      .form-services {
+        margin-bottom: 80px;
+        .services-icon {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 54.5px;
+          margin-bottom: 20px;
+
+          @media (max-width: 950px) {
+            padding: 0 15px;
+          }
+
+          .services-wrapper {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .services-icon__img {
+              width: 100px;
+              height: 100px;
+              background: $text-oders-title;
+              border: 5px solid $border-icon;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-shrink: 0;
+            }
+            .services-icon__border {
+              padding: 0 12px;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+
+              .point {
+                background: url("../../img/icon/point.svg");
+                width: 6px;
+                height: 6px;
+              }
+              .point:nth-child(1) {
+                @media (max-width: 1150px) {
+                  display: none;
+                }
+              }
+              .point:nth-child(2) {
+                @media (max-width: 1000px) {
+                  display: none;
+                }
+              }
+            }
+          }
+          .services-wrapper_width-none {
+            width: 100px;
+          }
+        }
+        .services-text {
+          display: flex;
+          justify-content: space-between;
+          p {
+            max-width: 188px;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: $text-white;
+
+            @media (max-width: 950px) {
+              max-width: 118px;
+              word-break: break-all;
+            }
+          }
+        }
+      }
+
+      .form-input {
+        padding-bottom: 250px;
+
+        .select {
+          position: relative;
+
+          .dropdown__button {
+            position: relative;
+            display: block;
+
+            @include input;
+
+            padding: 10px 35px 10px 10px;
+            cursor: pointer;
+          }
+          .dropdown__button::after {
+            content: "";
+            background: url("../../img/icon/arrow.svg") no-repeat;
+            width: 9px;
+            height: 6px;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+          }
+
+          .dropdow__list {
+            display: none;
+            position: absolute;
+            left: 0px;
+            top: 48px;
+            width: 370px;
+            height: 180px;
+            padding: 10px 35px 10px 10px;
+            list-style-type: none;
+            background-color: $background-form;
+            border: 3px solid $fone-input;
+            overflow-y: scroll;
+            z-index: 10;
+
+            .dropdow__list-item {
+              font-family: "Lato";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 34px;
+              color: $text-white;
+            }
+            .dropdow__list-item:hover {
+              color: $text-blue;
+              transition: 0.3s;
+            }
+          }
+          .dropdow__list_visible {
+            display: block;
+          }
+          .dropdown__input-hidden {
+            display: none;
+          }
+        }
+        .input {
+          @include input;
+          padding: 10px;
+        }
+        .input::placeholder {
+          color: $text-white;
+        }
+
+        .range {
+          width: 777px;
+          // height: 64px;
+          .range-content {
+            width: 100%;
+            height: 22px;
+            margin-bottom: 2px;
+            display: flex;
+            justify-content: space-between;
+            color: #ffffff;
+            p {
+            }
+            .range-content__num {
+            }
+          }
+          // .range-wrapper {
+            // position: relative;
+            // background: #f4f4f4;
+            // border-radius: 8px;
+            // width: 100%;
+            // height: 22px;
+            .range-input {
+            
+              width: 100%;
+              height: 7px;
+              background: $range-input;
+              border: 1px solid $text-white;
+              border-radius: 50px;
+              -webkit-appearance: none;
+
+            }
+            .range-input::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              width: 27px;
+              height: 27px;
+              background: $text-blue;
+              border-radius: 50%;
+              border: solid $border-icon;
+            }
+          // }
+        }
+        .file-wrapper {
+          .input__file {
+          }
+          .input__file-butto {
+            .input__file-icon {
+              img {
+              }
+            }
+            .input__file-text {
+            }
+          }
+        }
+        .form-button {
+        }
+      }
+    }
+  }
+}

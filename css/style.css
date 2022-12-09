@@ -156,30 +156,30 @@
 
 .oders {
   width: 100vw;
-  background-image: url("img/fone1(1920x850).png");
+  background-image: url("/img/fone1(1920x850).png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
 @media (max-width: 1439px) {
   .oders {
-    background-image: url("img/fone1(1439x637).png");
+    background-image: url("/img/fone1(1439x637).png");
   }
 }
 @media (max-width: 1247px) {
   .oders {
-    background-image: url("img/fone1(1247x552).png");
+    background-image: url("/img/fone1(1247x552).png");
   }
 }
 @media (max-width: 791px) {
   .oders {
-    background-image: url("img/fone1(791x350).png");
+    background-image: url("/img/fone1(791x350).png");
     background-position: top center;
   }
 }
 @media (max-width: 650px) {
   .oders {
-    background-image: url("img/fone1(575x255).png");
+    background-image: url("/img/fone1(575x255).png");
   }
 }
 .oders .container {
@@ -353,30 +353,30 @@
 .form {
   width: 100vw;
   background-color: #272733;
-  background-image: url("img//fone2(1920x920).png");
+  background-image: url("/img//fone2(1920x920).png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
 @media (max-width: 1439px) {
   .form {
-    background-image: url("img/fone2(1440x690).png");
+    background-image: url("/img/fone2(1440x690).png");
   }
 }
 @media (max-width: 1247px) {
   .form {
-    background-image: url("img/fone2(1248x598).png");
+    background-image: url("/img/fone2(1248x598).png");
   }
 }
 @media (max-width: 791px) {
   .form {
-    background-image: url("img/fone2(806x386).png");
+    background-image: url("/img/fone2(806x386).png");
     background-position: top center;
   }
 }
 @media (max-width: 650px) {
   .form {
-    background-image: url("img/fone2(576x276).png");
+    background-image: url("/img/fone2(576x276).png");
   }
 }
 .form .container {
@@ -592,7 +592,7 @@
   }
 }
 .form .container .form-wrapper .form-services .services-icon .services-wrapper .services-icon__border .point {
-  background: url("img/icon/point.svg");
+  background: url("/img/icon/point.svg");
   width: 6px;
   height: 6px;
 }
@@ -687,7 +687,7 @@
 }
 .form .container .form-wrapper .form-input .select .dropdown__button::after {
   content: "";
-  background: url("img/icon/arrow.svg") no-repeat;
+  background: url("/img/icon/arrow.svg") no-repeat;
   width: 9px;
   height: 6px;
   position: absolute;
@@ -884,19 +884,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
 }
-.footer .container .footer-wrapper p {
+@media (max-width: 900px) {
+  .footer .container .footer-wrapper {
+    height: 120px;
+    padding: 20px 0;
+    flex-wrap: nowrap;
+    display: grid;
+    grid-template-areas: "A A A A   A A A A   A A A A" "B B B B   C C C C   D D D D" "E E E E   E E F F   F F F F";
+    text-align: center;
+  }
+}
+.footer .container .footer-wrapper .footer__text {
   color: #ffffff;
 }
 .footer .container .footer-wrapper .footer__vector {
   width: 1px;
   height: 18px;
   border-left: 1px solid #C3C3C3;
+}
+@media (max-width: 900px) {
+  .footer .container .footer-wrapper .footer__vector {
+    display: none;
+  }
 }
 .footer .container .footer-wrapper .footer__icon {
   display: flex;
@@ -905,4 +921,44 @@
 }
 .footer .container .footer-wrapper .footer__icon img {
   margin-right: 10px;
+}
+@media (max-width: 400px) {
+  .footer .container .footer-wrapper .footer__icon span {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .footer .container .footer-wrapper .footer__icon {
+    display: inline-block;
+  }
+}
+@media (max-width: 900px) {
+  .footer .container .footer-wrapper > div:nth-child(1) {
+    grid-area: A;
+  }
+}
+@media (max-width: 900px) {
+  .footer .container .footer-wrapper > div:nth-child(3) {
+    grid-area: B;
+  }
+}
+@media (max-width: 900px) {
+  .footer .container .footer-wrapper > div:nth-child(4) {
+    grid-area: C;
+  }
+}
+@media (max-width: 900px) {
+  .footer .container .footer-wrapper > div:nth-child(5) {
+    grid-area: D;
+  }
+}
+@media (max-width: 900px) {
+  .footer .container .footer-wrapper > div:nth-last-child(1) {
+    grid-area: F;
+  }
+}
+@media (max-width: 900px) {
+  .footer .container .footer-wrapper > div:nth-last-child(2) {
+    grid-area: E;
+  }
 }/*# sourceMappingURL=style.css.map */

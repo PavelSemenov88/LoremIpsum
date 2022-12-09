@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+
   @media (max-width: 1439px) {
     background-image: url("../../img/fone1(1439x637).png");
   }
@@ -22,10 +23,13 @@
     max-width: 1172px;
     margin: 0 auto;
     padding-right: 6px;
+
     @media (max-width: 1200px) {
       width: 95%;
     }
+
     .oders-wrapper {
+
       .oders-title {
         font-family: "Lato";
         font-style: normal;
@@ -36,6 +40,7 @@
         color: $fone-black;
         padding-top: 160px;
         margin-bottom: 80px;
+
         @media (max-width: 1400px) {
           font-size: 38px;
           line-height: 38px;
@@ -58,6 +63,7 @@
           color: $text-oders-title;
         }
       }
+
       .oders-text {
         .oders-text__title {
           font-family: "Lato";
@@ -68,8 +74,10 @@
           color: $fone-black;
           margin-bottom: 10px;
         }
+
         .oders-text__points {
           margin-bottom: 80px;
+
           @media (max-width: 1650px) {
             margin-bottom: 40px;
           }
@@ -82,9 +90,11 @@
           @media (max-width: 650px) {
             margin-bottom: 10px;
           }
+
           .points {
             margin-bottom: 5px;
             position: relative;
+
             span {
               position: absolute;
               top: 12px;
@@ -92,6 +102,7 @@
               height: 1.5px;
               background-color: $fone-black;
             }
+
             p {
               font-family: "Lato";
               font-style: normal;
@@ -107,6 +118,7 @@
 
       .oders-button {
         padding-bottom: 202px;
+
         @media (max-width: 1650px) {
           padding-bottom: 122px;
         }
@@ -125,12 +137,14 @@
             margin: 0 auto;
             width: 183px;
           }
+
           .oders-button__blue {
             @include button-blue;
             @media (max-width: 420px) {
               margin-bottom: 30px;
             }
           }
+          
           .oders-button__white {
             @include button-white;
             margin-left: 30px;

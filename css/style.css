@@ -5,7 +5,7 @@
 
 ::-webkit-scrollbar {
   width: 7px;
-  height: 7px;
+  height: 0;
 }
 
 ::-webkit-scrollbar-track {
@@ -869,4 +869,40 @@
   .form .container .form-wrapper .button-wrapper .button-form {
     width: 95%;
   }
+}
+
+.footer {
+  background: #3d4050;
+}
+.footer .container {
+  max-width: 1172px;
+  margin: 0 auto;
+  padding-right: 6px;
+}
+.footer .container .footer-wrapper {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+.footer .container .footer-wrapper p {
+  color: #ffffff;
+}
+.footer .container .footer-wrapper .footer__vector {
+  width: 1px;
+  height: 18px;
+  border-left: 1px solid #C3C3C3;
+}
+.footer .container .footer-wrapper .footer__icon {
+  display: flex;
+  align-items: center;
+  color: #C3C3C3;
+}
+.footer .container .footer-wrapper .footer__icon img {
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */

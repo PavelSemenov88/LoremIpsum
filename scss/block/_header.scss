@@ -8,15 +8,18 @@
     max-width: 1172px;
     margin: 0 auto;
     padding: 33.5px 6px 31.5px 0;
+
     @media (max-width: 1200px) {
       width: 95%;
     }
+
     .header-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
       .header-main {
+
         .logo {
           font-family: "Raleway";
           font-style: normal;
@@ -25,19 +28,23 @@
           line-height: 33px;
           text-transform: uppercase;
           color: $text-white;
+
           span {
             color: $text-blue;
           }
         }
       }
+
       .menu {
         width: 37.1%;
+
         @media (max-width: 900px) {
           width: 50%;
         }
         @media (max-width: 650px) {
           width: 30px;
         }
+
         .menu-list {
           display: flex;
           justify-content: space-between;
@@ -57,9 +64,11 @@
 
           .menu-list__item {
             list-style-type: none;
+
             @media (max-width: 650px) {
               padding-bottom: 10px;
             }
+
             .menu-list__link {
               color: $text-white;
               font-family: "Lato";
@@ -69,28 +78,32 @@
               line-height: 16px;
               text-transform: uppercase;
             }
+
             .menu-list__link:hover {
               color: $text-metu-blue;
               transition: 0.3s;
             }
           }
         }
+
         .menu-list_active {
           right: 50px;
         }
+
         .menu-burder {
           display: none;
           position: relative;
+
           @media (max-width: 650px) {
             display: inline-block;
             width: 30px;
             height: 30px;
             cursor: pointer;
           }
+
           span {
             display: block;
             position: absolute;
-
             width: 30px;
             height: 3px;
             background-color: $text-white;
@@ -101,25 +114,31 @@
           span:nth-child(1) {
             top: 0;
           }
+
           span:nth-child(2) {
             top: 13.5px;
           }
+
           span:nth-child(3) {
             bottom: 0;
           }
         }
+
         .menu-burder:hover > span {
           background-color: $text-metu-blue;
         }
+
         .menu-burder_active span:nth-child(1) {
           transform: rotate(45deg);
           top: calc(50% - 1.5px);
           left: -5px;
           width: 40px;
         }
+
         .menu-burder_active span:nth-child(2) {
           opacity: 0;
         }
+        
         .menu-burder_active span:nth-child(3) {
           transform: rotate(-45deg);
           top: calc(50% - 1.5px);

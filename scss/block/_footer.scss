@@ -1,0 +1,41 @@
+.footer {
+  background: $scrollbar-fone;
+
+  .container {
+    max-width: 1172px;
+    margin: 0 auto;
+    padding-right: 6px;
+
+    .footer-wrapper {
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+
+      p {
+        color: $text-white;
+      }
+
+      .footer__vector {
+        width: 1px;
+        height: 18px;
+        border-left: 1px solid $text-footer;
+      }
+
+      .footer__icon {
+        display: flex;
+        align-items: center;
+        color: $text-footer;
+        
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

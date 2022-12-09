@@ -72,7 +72,7 @@
   .header .container .header-wrapper .menu .menu-list {
     display: none;
     position: absolute;
-    right: 50px;
+    right: 60px;
     top: 20px;
     background-color: #000;
     z-index: 66;
@@ -103,7 +103,7 @@
   transition: 0.3s;
 }
 .header .container .header-wrapper .menu .menu-list_active {
-  right: 50px;
+  display: block;
 }
 .header .container .header-wrapper .menu .menu-burder {
   display: none;
@@ -304,7 +304,7 @@
     padding-bottom: 30px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .oders .container .oders-wrapper .oders-button .button-wrapper {
     margin: 0 auto;
     width: 183px;
@@ -324,7 +324,7 @@
   font-size: 13px;
   line-height: 16px;
 }
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .oders .container .oders-wrapper .oders-button .button-wrapper .oders-button__blue {
     margin-bottom: 30px;
   }
@@ -344,7 +344,7 @@
   line-height: 16px;
   margin-left: 30px;
 }
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .oders .container .oders-wrapper .oders-button .button-wrapper .oders-button__white {
     margin-left: 0;
   }
@@ -698,6 +698,7 @@
 .form .container .form-wrapper .form-input .select .dropdow__list {
   display: none;
   position: absolute;
+  text-align: left;
   left: 0px;
   top: 48px;
   width: 100%;
@@ -789,6 +790,9 @@
   .form .container .form-wrapper .form-input .range .range-content {
     margin-bottom: 15px;
   }
+}
+.form .container .form-wrapper .form-input .range .range-content .range-content__num {
+  margin-left: 15px;
 }
 .form .container .form-wrapper .form-input .range .range-input {
   width: 100%;

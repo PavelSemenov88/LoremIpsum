@@ -52,7 +52,7 @@
           @media (max-width: 650px) {
             display: none;
             position: absolute;
-            right: 50px;
+            right: 60px;
             top: 20px;
             background-color: $fone-black;
             z-index: 66;
@@ -87,7 +87,7 @@
         }
 
         .menu-list_active {
-          right: 50px;
+          display: block;
         }
 
         .menu-burder {

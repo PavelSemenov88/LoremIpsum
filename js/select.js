@@ -6,7 +6,6 @@ const select = document.querySelectorAll('.select');
 select.forEach((selectWrapper) => {
   const dropdownButton = selectWrapper.querySelector('.dropdown__button');
   const dropdownList = selectWrapper.querySelector('.dropdow__list');
-  console.log("click");
   const dropdowListItem = selectWrapper.querySelectorAll('.dropdow__list-item');
   const dropdownInputHidde = selectWrapper.querySelector('.dropdown__input-hidden');
 

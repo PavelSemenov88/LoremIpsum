@@ -296,6 +296,7 @@
           .dropdow__list {
             display: none;
             position: absolute;
+            text-align: left;
             left: 0px;
             top: 48px;
             width: 100%;
@@ -369,8 +370,113 @@
             color: $text-white;
             @media (max-width: 420px) {
               margin-bottom: 15px;
+              
+            }
+            .range-content__num {
+              margin-left: 15px;
             }
           }
+
+          // .range-input {
+          //   -webkit-appearance: none;
+          //   margin: 10px 0;
+          //   width: 100%;
+          // }
+          // .range-input:focus {
+          //   outline: none;
+          // }
+          // .range-input::-webkit-slider-runnable-track {
+          //   width: 100%;
+          //   height: 7px;
+          //   cursor: pointer;
+          //   // box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+          //   background: $range-input;
+          //   border-radius: 3px;
+          //   border: 1px solid $text-white;
+          // }
+          // .range-input::-webkit-slider-thumb {
+          //   // box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+          //   width: 27px;
+          //   height: 27px;
+          //   background: $text-blue;
+          //   border-radius: 50%;
+          //   border: solid $border-icon;
+          //   cursor: pointer;
+          //   -webkit-appearance: none;
+          //   margin-top: -11px;
+          // }
+          // .range-input:focus::-webkit-slider-runnable-track {
+          //   background: $range-input;
+          // }
+          // .range-input::-moz-range-track {
+          //   width: 100%;
+          //   height: 7px;
+          //   cursor: pointer;
+          //   // animate: 0.2s;
+          //   // box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+          //   background: $range-input;
+          //   border-radius: 3px;
+          //   border: 1px solid $text-white;
+          // }
+
+          // // стиль ползунка
+          // .range-input::-moz-range-thumb {
+          //   // box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+          //   width: 27px;
+          //   height: 27px;
+          //   background: $text-blue;
+          //   border-radius: 50%;
+          //   border: solid $border-icon;
+          //   cursor: pointer;
+          // }
+
+          // // Задаёт стиль дорожки ползунка для слайдера
+          // .range-input::-ms-track {
+          //   width: 100%;
+          //   height: 7px;
+          //   cursor: pointer;
+          //   // animate: 0.2s;
+          //   background: $range-input;
+          //   border: 1px solid $text-white;
+          //   border-radius: 3px
+          //   // background: transparent;
+          //   // border-color: transparent;
+          //   // border-width: 39px 0;
+          //   // color: transparent;
+          // }
+
+          // // Стиль применяется к дорожке слайдера от меньшего значения до текущего значения, где располагается ползунок.
+          // .range-input::-ms-fill-lower {
+          //   background: $range-input;
+          //   border: 1px solid $text-white;
+          //   border-radius: 3px;
+          //   // box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+          // }
+
+          // //Стиль применяется к дорожке слайдера от текущего значения, где располагается ползунок, до максимального значения слайдера.
+          // .range-input::-ms-fill-upper {
+          //   background: $range-input;
+          //   border: 1px solid $text-white;
+          //   border-radius: 3px;
+          //   // box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+          // }
+
+          // // стиль ползунка
+          // .range-input::-ms-thumb {
+          //   // box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+          //   width: 27px;
+          //   height: 27px;
+          //   background: $text-blue;
+          //   border-radius: 50%;
+          //   border: solid $border-icon;
+          //   cursor: pointer;
+          // }
+          // .range-input:focus::-ms-fill-lower {
+          //   background: $range-input;
+          // }
+          // .range-input:focus::-ms-fill-upper {
+          //   background: $range-input;
+          // }
 
           .range-input {
             width: 100%;
@@ -379,10 +485,12 @@
             border: 1px solid $text-white;
             border-radius: 50px;
             -webkit-appearance: none;
+            // -moz-appearance: none;
           }
 
           .range-input::-webkit-slider-thumb {
             -webkit-appearance: none;
+            // -moz-appearance: none;
             width: 27px;
             height: 27px;
             background: $text-blue;

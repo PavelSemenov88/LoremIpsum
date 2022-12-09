@@ -21,6 +21,7 @@
   .container {
     max-width: 1172px;
     margin: 0 auto;
+    padding-right: 6px;
     @media (max-width: 1200px) {
       width: 95%;
     }

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/select.js" defer></script>
     <script src="./js/range.js" defer></script>
+    <script src="./js/file.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -197,31 +198,55 @@
                 class="dropdown__input-hidden"
               />
             </div>
-            <input type="mail" class="input" name="mail" placeholder="Ваш e-mail">
-            <input type="text" class="input" name="name" placeholder="Ваше имя">
+            <input
+              type="mail"
+              class="input"
+              name="mail"
+              placeholder="Ваш e-mail"
+            />
+            <input
+              type="text"
+              class="input"
+              name="name"
+              placeholder="Ваше имя"
+            />
             <div class="range">
               <div class="range-content">
                 <p>Sed ut perspiciatis, unde omnis iste natus</p>
                 <p class="range-content__num">75%</p>
               </div>
               <!-- <div class="range-wrapper slider"> -->
-                <input type="range" class="range-input fader" min="0" max="100" value="0">
+              <input
+                type="range"
+                class="range-input fader"
+                min="0"
+                max="100"
+                value="75"
+              />
               <!-- </div> -->
             </div>
 
             <div class="file-wrapper">
-              <input name="file" type="file" id="input-file" class="input__file" multiple>
-              <label for="input-file" class="input__file-button">
-                <span class="input__file-icon"><img src="./img/icon/input-file.svg" alt="Выбрать файл"></span>
+              <input
+                name="file"
+                type="file"
+                id="file"
+                class="input__file"
+                multiple
+              />
+              <label for="file" class="input__file-button">
+                <img src="./img/icon/input-file.svg" alt="Выбрать файл" />
                 <span class="input__file-text">Прикрепить файл</span>
               </label>
             </div>
 
-            <button class="form-button">
+            
+          </form>
+          <div class="button-wrapper">
+            <button class="button-form">
               <p>отправить</p>
             </button>
-          </form>
-          
+          </div>
         </div>
       </div>
     </section>

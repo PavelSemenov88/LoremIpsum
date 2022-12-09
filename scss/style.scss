@@ -64,7 +64,7 @@ $range-input: rgba(255, 255, 255, 0.7);
 }
 
 @mixin input {
-  width: 370px;
+  width: 100%;
   height: 48px;
   border: 3px solid $fone-input;
   margin-bottom: 30px;

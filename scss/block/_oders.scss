@@ -1,22 +1,22 @@
 .oders {
   width: 100vw;
-  background-image: url("/img/fone1(1920x850).png");
+  background-image: url("img/fone1(1920x850).png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 
   @media (max-width: 1439px) {
-    background-image: url("/img/fone1(1439x637).png");
+    background-image: url("img/fone1(1439x637).png");
   }
   @media (max-width: 1247px) {
-    background-image: url("/img/fone1(1247x552).png");
+    background-image: url("img/fone1(1247x552).png");
   }
   @media (max-width: 791px) {
-    background-image: url("/img/fone1(791x350).png");
+    background-image: url("img/fone1(791x350).png");
     background-position: top center;
   }
   @media (max-width: 650px) {
-    background-image: url("/img/fone1(575x255).png");
+    background-image: url("img/fone1(575x255).png");
   }
 
   .container {

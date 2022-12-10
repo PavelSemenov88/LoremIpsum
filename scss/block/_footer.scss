@@ -12,8 +12,6 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      font-family: "Lato";
-      font-style: normal;
       font-weight: 400;
       font-size: 13px;
       line-height: 16px;
@@ -24,9 +22,9 @@
         flex-wrap: nowrap;
         display: grid;
         grid-template-areas:
-    "A A A A   A A A A   A A A A"
-    "B B B B   C C C C   D D D D"
-    "E E E E   E E F F   F F F F";
+          "A A A A   A A A A   A A A A"
+          "B B B B   C C C C   D D D D"
+          "E E E E   E E F F   F F F F";
         text-align: center;
       }
 
@@ -42,61 +40,53 @@
           display: none;
         }
       }
-        .footer__icon {
-          display: flex;
-          align-items: center;
-          color: $text-footer;
-          
-          img {
-            margin-right: 10px;
-          }
+      .footer__icon {
+        display: flex;
+        align-items: center;
+        color: $text-footer;
 
-          span {
-            @media (max-width: 400px) {
-              display: none;
-            }
-          }
-          @media (max-width: 900px) {
-            display: inline-block;
-            
-          }
+        img {
+          margin-right: 10px;
         }
 
+        span {
+          @media (max-width: 400px) {
+            font-size: 10px;
+          }
+        }
+        @media (max-width: 900px) {
+          display: inline-block;
+        }
+      }
     }
-    .footer-wrapper > div:nth-child(1){
+    .footer-wrapper > div:nth-child(1) {
       @media (max-width: 900px) {
         grid-area: A;
-        
       }
     }
-    .footer-wrapper > div:nth-child(3){
+    .footer-wrapper > div:nth-child(3) {
       @media (max-width: 900px) {
         grid-area: B;
-        
       }
     }
-    .footer-wrapper > div:nth-child(4){
+    .footer-wrapper > div:nth-child(4) {
       @media (max-width: 900px) {
         grid-area: C;
-        
       }
     }
-    .footer-wrapper > div:nth-child(5){
+    .footer-wrapper > div:nth-child(5) {
       @media (max-width: 900px) {
         grid-area: D;
-        
       }
     }
-    .footer-wrapper > div:nth-last-child(1){
+    .footer-wrapper > div:nth-last-child(1) {
       @media (max-width: 900px) {
         grid-area: F;
-        
       }
     }
-    .footer-wrapper > div:nth-last-child(2){
+    .footer-wrapper > div:nth-last-child(2) {
       @media (max-width: 900px) {
         grid-area: E;
-        
       }
     }
   }

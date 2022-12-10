@@ -1,13 +1,13 @@
 'use strict';
 
 
-const select = document.querySelectorAll('.select');
+const dropdow = document.querySelectorAll('.dropdow');
 
-select.forEach((selectWrapper) => {
-  const dropdownButton = selectWrapper.querySelector('.dropdown__button');
-  const dropdownList = selectWrapper.querySelector('.dropdow__list');
-  const dropdowListItem = selectWrapper.querySelectorAll('.dropdow__list-item');
-  const dropdownInputHidde = selectWrapper.querySelector('.dropdown__input-hidden');
+dropdow.forEach((dropdowWrapper) => {
+  const dropdownButton = dropdowWrapper.querySelector('.dropdown__button');
+  const dropdownList = dropdowWrapper.querySelector('.dropdow__list');
+  const dropdowListItem = dropdowWrapper.querySelectorAll('.dropdow__list-item');
+  const dropdownInputHidde = dropdowWrapper.querySelector('.dropdown__input-hidden');
 
   document.addEventListener('click', (e) => {
     

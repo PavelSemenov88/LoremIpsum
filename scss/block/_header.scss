@@ -3,6 +3,7 @@
   position: fixed;
   top: 0;
   background: $fone-header;
+  z-index: 1;
 
   .container {
     max-width: 1172px;
@@ -21,8 +22,7 @@
       .header-main {
 
         .logo {
-          font-family: "Raleway";
-          font-style: normal;
+          font-family: "Raleway", sans-serif;
           font-weight: 800;
           font-size: 28px;
           line-height: 33px;
@@ -62,7 +62,7 @@
             transition: right 0.5s;
           }
 
-          .menu-list__item {
+          &__item {
             list-style-type: none;
 
             @media (max-width: 650px) {
@@ -71,8 +71,6 @@
 
             .menu-list__link {
               color: $text-white;
-              font-family: "Lato";
-              font-style: normal;
               font-weight: 600;
               font-size: 13px;
               line-height: 16px;

@@ -31,8 +31,6 @@
     .oders-wrapper {
 
       .oders-title {
-        font-family: "Lato";
-        font-style: normal;
         font-weight: 700;
         font-size: 48px;
         line-height: 58px;
@@ -65,9 +63,7 @@
       }
 
       .oders-text {
-        .oders-text__title {
-          font-family: "Lato";
-          font-style: normal;
+        &__title {
           font-weight: 700;
           font-size: 20px;
           line-height: 24px;
@@ -104,8 +100,6 @@
             }
 
             p {
-              font-family: "Lato";
-              font-style: normal;
               font-weight: 400;
               font-size: 20px;
               line-height: 24px;

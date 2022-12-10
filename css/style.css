@@ -1,6 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;800&display=swap");
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato-Heavy.eot");
+  src: url("Lato-Heavy.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Heavy.woff2") format("woff2"), url("../font/Lato-Heavy.woff") format("woff"), url("../font/Lato-Heavy.ttf") format("truetype"), url("../font/Lato-Heavy.svg#Lato-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato-Bold.eot");
+  src: url("../font/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Bold.woff2") format("woff2"), url("../font/Lato-Bold.woff") format("woff"), url("../font/Lato-Bold.ttf") format("truetype"), url("../font/Lato-Bold.svg#Lato-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato-Regular.eot");
+  src: url("../font/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Regular.woff2") format("woff2"), url("../font/Lato-Regular.woff") format("woff"), url("../font/Lato-Regular.ttf") format("truetype"), url("../font/Lato-Regular.svg#Lato-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato-Semibold.eot");
+  src: url("../font/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Semibold.woff2") format("woff2"), url("../font/Lato-Semibold.woff") format("woff"), url("../font/Lato-Semibold.ttf") format("truetype"), url("../font/Lato-Semibold.svg#Lato-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../font/Raleway-ExtraBold.eot");
+  src: url("../font/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../font/Raleway-ExtraBold.woff2") format("woff2"), url("../font/Raleway-ExtraBold.woff") format("woff"), url("../font/Raleway-ExtraBold.ttf") format("truetype"), url("../font/Raleway-ExtraBold.svg#Raleway-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -23,6 +67,7 @@
   position: fixed;
   top: 0;
   background: rgba(16, 16, 29, 0.9);
+  z-index: 1;
 }
 .header .container {
   max-width: 1172px;
@@ -40,8 +85,7 @@
   align-items: center;
 }
 .header .container .header-wrapper .header-main .logo {
-  font-family: "Raleway";
-  font-style: normal;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 28px;
   line-height: 33px;
@@ -81,24 +125,22 @@
     transition: right 0.5s;
   }
 }
-.header .container .header-wrapper .menu .menu-list .menu-list__item {
+.header .container .header-wrapper .menu .menu-list__item {
   list-style-type: none;
 }
 @media (max-width: 650px) {
-  .header .container .header-wrapper .menu .menu-list .menu-list__item {
+  .header .container .header-wrapper .menu .menu-list__item {
     padding-bottom: 10px;
   }
 }
-.header .container .header-wrapper .menu .menu-list .menu-list__item .menu-list__link {
+.header .container .header-wrapper .menu .menu-list__item .menu-list__link {
   color: #ffffff;
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   text-transform: uppercase;
 }
-.header .container .header-wrapper .menu .menu-list .menu-list__item .menu-list__link:hover {
+.header .container .header-wrapper .menu .menu-list__item .menu-list__link:hover {
   color: #43abf0;
   transition: 0.3s;
 }
@@ -193,8 +235,6 @@
   }
 }
 .oders .container .oders-wrapper .oders-title {
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
@@ -229,9 +269,7 @@
 .oders .container .oders-wrapper .oders-title span {
   color: #3e9cdc;
 }
-.oders .container .oders-wrapper .oders-text .oders-text__title {
-  font-family: "Lato";
-  font-style: normal;
+.oders .container .oders-wrapper .oders-text__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -273,8 +311,6 @@
   background-color: #000;
 }
 .oders .container .oders-wrapper .oders-text .oders-text__points .points p {
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -318,7 +354,7 @@
   color: #ffffff;
   border-radius: 4px;
   text-transform: uppercase;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -337,7 +373,7 @@
   color: #2a2b30;
   border-radius: 4px;
   text-transform: uppercase;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -460,8 +496,6 @@
 }
 .form .container .form-wrapper .form-text h2 {
   margin-bottom: 30px;
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 800;
   font-size: 36px;
   line-height: 43px;
@@ -484,8 +518,6 @@
   }
 }
 .form .container .form-wrapper .form-text p {
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -626,8 +658,6 @@
 }
 .form .container .form-wrapper .form-services .services-text p {
   max-width: 188px;
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -652,22 +682,22 @@
     display: inline-block;
   }
 }
-.form .container .form-wrapper .form-input .select {
+.form .container .form-wrapper .form-input .dropdow {
   position: relative;
   width: 31.57%;
 }
 @media (max-width: 1000px) {
-  .form .container .form-wrapper .form-input .select {
+  .form .container .form-wrapper .form-input .dropdow {
     display: inline-block;
     width: 370px;
   }
 }
 @media (max-width: 420px) {
-  .form .container .form-wrapper .form-input .select {
+  .form .container .form-wrapper .form-input .dropdow {
     width: 95%;
   }
 }
-.form .container .form-wrapper .form-input .select .dropdown__button {
+.form .container .form-wrapper .form-input .dropdow .dropdown__button {
   position: relative;
   display: block;
   width: 100%;
@@ -676,7 +706,7 @@
   margin-bottom: 30px;
   text-align: left;
   color: #ffffff;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -685,7 +715,7 @@
   padding: 10px 35px 10px 10px;
   cursor: pointer;
 }
-.form .container .form-wrapper .form-input .select .dropdown__button::after {
+.form .container .form-wrapper .form-input .dropdow .dropdown__button::after {
   content: "";
   background: url("../img/icon/arrow.svg") no-repeat;
   width: 9px;
@@ -695,7 +725,7 @@
   right: 15px;
   transform: translateY(-50%);
 }
-.form .container .form-wrapper .form-input .select .dropdow__list {
+.form .container .form-wrapper .form-input .dropdow .dropdow__list {
   display: none;
   position: absolute;
   text-align: left;
@@ -710,22 +740,20 @@
   overflow-y: scroll;
   z-index: 10;
 }
-.form .container .form-wrapper .form-input .select .dropdow__list .dropdow__list-item {
-  font-family: "Lato";
-  font-style: normal;
+.form .container .form-wrapper .form-input .dropdow .dropdow__list .dropdow__list-item {
   font-weight: 400;
   font-size: 18px;
   line-height: 34px;
   color: #ffffff;
 }
-.form .container .form-wrapper .form-input .select .dropdow__list .dropdow__list-item:hover {
+.form .container .form-wrapper .form-input .dropdow .dropdow__list .dropdow__list-item:hover {
   color: #42a9ed;
   transition: 0.3s;
 }
-.form .container .form-wrapper .form-input .select .dropdow__list_visible {
+.form .container .form-wrapper .form-input .dropdow .dropdow__list_visible {
   display: block;
 }
-.form .container .form-wrapper .form-input .select .dropdown__input-hidden {
+.form .container .form-wrapper .form-input .dropdow .dropdown__input-hidden {
   display: none;
 }
 .form .container .form-wrapper .form-input .input {
@@ -735,7 +763,7 @@
   margin-bottom: 30px;
   text-align: left;
   color: #ffffff;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -810,6 +838,13 @@
   border-radius: 50%;
   border: solid #286690;
 }
+.form .container .form-wrapper .form-input .range .range-input::-moz-range-thumb {
+  width: 27px;
+  height: 27px;
+  background: #42a9ed;
+  border-radius: 50%;
+  border: solid #286690;
+}
 .form .container .form-wrapper .form-input .file-wrapper {
   width: 31.57%;
   height: 48px;
@@ -836,8 +871,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
@@ -861,13 +894,16 @@
   color: #ffffff;
   border-radius: 4px;
   text-transform: uppercase;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   width: 370px;
   height: 48px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
 }
 @media (max-width: 420px) {
   .form .container .form-wrapper .button-wrapper .button-form {
@@ -889,8 +925,6 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
@@ -911,7 +945,7 @@
 .footer .container .footer-wrapper .footer__vector {
   width: 1px;
   height: 18px;
-  border-left: 1px solid #C3C3C3;
+  border-left: 1px solid #c3c3c3;
 }
 @media (max-width: 900px) {
   .footer .container .footer-wrapper .footer__vector {
@@ -921,14 +955,14 @@
 .footer .container .footer-wrapper .footer__icon {
   display: flex;
   align-items: center;
-  color: #C3C3C3;
+  color: #c3c3c3;
 }
 .footer .container .footer-wrapper .footer__icon img {
   margin-right: 10px;
 }
 @media (max-width: 400px) {
   .footer .container .footer-wrapper .footer__icon span {
-    display: none;
+    font-size: 10px;
   }
 }
 @media (max-width: 900px) {

@@ -1,16 +1,5 @@
 @import "block/_font";
 
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-}
-button:hover {
-  opacity: 0.9;
-}
-
 $fone-header: rgba(16, 16, 29, 0.9);
 $fone-black: #000;
 $text-white: #ffffff;
@@ -28,6 +17,21 @@ $fone-input: rgba(61, 64, 80, 0.85);
 $range-input: rgba(255, 255, 255, 0.7);
 $text-footer: #c3c3c3;
 
+* {
+  box-sizing: border-box;
+  scrollbar-width: auto;
+  scrollbar-color: $text-oders-title $scrollbar-fone;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
   height: 0;
@@ -41,6 +45,7 @@ $text-footer: #c3c3c3;
   background-color: $text-oders-title;
   border-radius: 3px;
 }
+
 
 @mixin button-blue {
   width: 183px;

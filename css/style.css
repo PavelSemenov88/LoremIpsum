@@ -443,7 +443,7 @@ body {
 }
 @media (max-width: 650px) {
   .form .container {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 }
 .form .container .form-wrapper {
@@ -884,6 +884,7 @@ body {
   margin-right: 10px;
 }
 .form .container .form-wrapper .button-wrapper {
+  position: relative;
   text-align: center;
 }
 .form .container .form-wrapper .button-wrapper .button-form {
@@ -909,6 +910,20 @@ body {
   .form .container .form-wrapper .button-wrapper .button-form {
     width: 95%;
   }
+}
+.form .container .form-wrapper .button-wrapper .button__error-message {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0;
+  transition: 0.9s opacity ease-in-out;
+}
+.form .container .form-wrapper .button-wrapper .button__error-message_vanish {
+  opacity: 1;
+  transition: 0.9s opacity ease-in-out;
 }
 
 .footer {

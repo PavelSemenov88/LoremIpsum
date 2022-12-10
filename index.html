@@ -8,16 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@800&display=swap"
-      rel="stylesheet"
-    /> -->
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
     <script src="./js/dropdow.js" defer></script>
     <script src="./js/range.js" defer></script>
     <script src="./js/file.js" defer></script>
     <script src="./js/burger.js" defer></script>
+    <script src="./js/submit.js" defer></script>
+
     <title>Document</title>
   </head>
   <body>
@@ -196,20 +196,19 @@
               </ul>
               <input
                 type="text"
-                name="select-category"
-                value=""
-                class="dropdown__input-hidden"
+                class="dropdown__input-hidden input-submit"
+                name="dropdown"
               />
             </div>
             <input
               type="mail"
-              class="input"
+              class="input input-submit"
               name="mail"
               placeholder="Ваш e-mail"
             />
             <input
               type="text"
-              class="input"
+              class="input input-submit"
               name="name"
               placeholder="Ваше имя"
             />
@@ -219,8 +218,9 @@
                 <p class="range-content__num">75%</p>
               </div>
               <input
+                name="range"
                 type="range"
-                class="range-input fader"
+                class="range-input fader input-submit"
                 min="0"
                 max="100"
                 value="75"
@@ -232,7 +232,7 @@
                 name="file"
                 type="file"
                 id="file"
-                class="input__file"
+                class="input__file input-submit"
                 multiple
               />
               <label for="file" class="input__file-button">
@@ -242,9 +242,10 @@
             </div>
           </form>
           <div class="button-wrapper">
-            <button class="button-form">
+            <button type="submit" class="button-form">
               <p>отправить</p>
             </button>
+            <p class="button__error-message">Данные успешно отправлены!</p>
           </div>
         </div>
       </div>

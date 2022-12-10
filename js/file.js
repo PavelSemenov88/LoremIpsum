@@ -1,8 +1,8 @@
 'use strict';
 
-const inputs = document.querySelectorAll('.input__file');
+const inputsFile = document.querySelectorAll('.input__file');
 
-inputs.forEach(input => {
+inputsFile.forEach(input => {
   let labelVal = document.querySelector('.input__file-text');
 
   input.addEventListener('change', (e) => {

@@ -38,7 +38,7 @@
       padding-bottom: 52px;
     }
     @media (max-width: 650px) {
-      padding-bottom: 30px;
+      padding-bottom: 40px;
     }
 
     .form-wrapper {
@@ -339,7 +339,6 @@
 
         .input::placeholder {
           color: $text-white;
-          
         }
 
         .range {
@@ -436,6 +435,7 @@
       }
 
       .button-wrapper {
+        position: relative;
         text-align: center;
 
         .button-form {
@@ -448,6 +448,21 @@
           @media (max-width: 420px) {
             width: 95%;
           }
+        }
+
+        .button__error-message {
+          position: absolute;
+          top: 60px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          color: $text-white;
+          opacity: 0;
+          transition: 0.9s opacity ease-in-out;
+        }
+        .button__error-message_vanish {
+          opacity: 1;
+          transition: 0.9s opacity ease-in-out;
         }
       }
     }

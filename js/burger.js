@@ -3,7 +3,6 @@
 const menuBurder = document.querySelector('.menu-burder');
 const menuList = document.querySelector('.menu-list');
 const spanBurger = menuBurder.querySelectorAll('span');
-console.log(spanBurger);
 
 document.addEventListener('click', (e) => {
     if (e.target === menuBurder || e.target.classList.contains('menu-burder__span')) {

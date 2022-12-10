@@ -7,6 +7,9 @@ body {
   font-family: "Lato", sans-serif;
   font-style: normal;
 }
+button:hover {
+  opacity: 0.9;
+}
 
 $fone-header: rgba(16, 16, 29, 0.9);
 $fone-black: #000;

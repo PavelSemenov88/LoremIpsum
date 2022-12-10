@@ -47,6 +47,10 @@ body {
   font-style: normal;
 }
 
+button:hover {
+  opacity: 0.9;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
   height: 0;
@@ -849,7 +853,6 @@ body {
   width: 31.57%;
   height: 48px;
   position: relative;
-  cursor: pointer;
 }
 @media (max-width: 1000px) {
   .form .container .form-wrapper .form-input .file-wrapper {
@@ -866,6 +869,7 @@ body {
   display: none;
 }
 .form .container .form-wrapper .form-input .file-wrapper .input__file-button {
+  cursor: pointer;
   width: 100%;
   height: 48px;
   position: absolute;
@@ -883,6 +887,9 @@ body {
 }
 .form .container .form-wrapper .form-input .file-wrapper .input__file-button img {
   margin-right: 10px;
+}
+.form .container .form-wrapper .form-input .file-wrapper .input__file-button:hover {
+  opacity: 0.9;
 }
 .form .container .form-wrapper .button-wrapper {
   position: relative;

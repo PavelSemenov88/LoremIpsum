@@ -849,6 +849,7 @@ body {
   width: 31.57%;
   height: 48px;
   position: relative;
+  cursor: pointer;
 }
 @media (max-width: 1000px) {
   .form .container .form-wrapper .form-input .file-wrapper {

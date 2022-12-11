@@ -6,7 +6,7 @@ const dropdow = document.querySelectorAll('.dropdow');
 dropdow.forEach((dropdowWrapper) => {
   const dropdownButton = dropdowWrapper.querySelector('.dropdown__button');
   const dropdownList = dropdowWrapper.querySelector('.dropdow__list');
-  const dropdowListItem = dropdowWrapper.querySelectorAll('.dropdow__list-item');
+  const dropdowListItem = dropdowWrapper.querySelectorAll('.list');
   const dropdownInputHidde = dropdowWrapper.querySelector('.dropdown__input-hidden');
 
   document.addEventListener('click', (e) => {

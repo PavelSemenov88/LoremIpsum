@@ -174,7 +174,7 @@
               }
             }
 
-            .services-icon__border {
+            .services-icon__line {
               padding: 0 12px;
               width: 100%;
               display: flex;
@@ -261,7 +261,7 @@
       }
 
       .form-input {
-        padding-bottom: 40px;
+        padding-bottom: 10px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -286,7 +286,6 @@
           .dropdown__button {
             position: relative;
             display: block;
-
             @include input;
             padding: 10px 35px 10px 10px;
             cursor: pointer;
@@ -318,14 +317,14 @@
             overflow-y: scroll;
             z-index: 10;
 
-            .dropdow__list-item {
+            .list {
               font-weight: 400;
               font-size: 18px;
               line-height: 34px;
               color: $text-white;
             }
 
-            .dropdow__list-item:hover {
+            .list:hover {
               color: $text-blue;
               transition: 0.3s;
             }
@@ -359,6 +358,7 @@
 
         .range {
           width: 66.41%;
+          margin-bottom: 30px;
 
           @media (max-width: 1000px) {
             display: inline-block;
@@ -414,6 +414,7 @@
           width: 31.57%;
           height: 48px;
           position: relative;
+          margin-bottom: 30px;
 
           @media (max-width: 1000px) {
             display: inline-block;

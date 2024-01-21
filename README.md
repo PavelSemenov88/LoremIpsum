@@ -1,1 +1,3 @@
-# LoremIpsum
+## Веб-сайт проекта
+
+https://pavelsemenov88.github.io/LoremIpsum/
